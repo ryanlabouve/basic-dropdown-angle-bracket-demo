@@ -1,5 +1,15 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Angle Bracket:</h1>
+<BasicDropdown as |dd|>
+  <dd.Trigger>Click me</dd.Trigger>
+  <dd.Content>Content of the trigger</dd.Content>
 
-{{outlet}}
+</BasicDropdown>
+
+<div><hr></div>
+
+<h1>Moustache Hashtag:</h1>
+{{#basic-dropdown as |dd|}}
+  {{#dd.trigger}}Click me{{/dd.trigger}}
+  {{#dd.content}}Content of the trigger{{/dd.content}}
+{{/basic-dropdown}}
+
